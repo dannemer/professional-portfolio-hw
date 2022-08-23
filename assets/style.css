@@ -1,15 +1,18 @@
-* {
-box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: grey;
+  background-color: black;
+  line-height: 2;
+  flex-direction: row;
 }
 
 header {
-  background: grey;
+  background: black;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 200%;
+  color: white;
 }
 
 .profile {
@@ -19,50 +22,77 @@ header {
 }
 
 nav {
-  background-color: grey;
-  text-align: center;
+  background-color: white;
+  text-align: left;
+  font-size: large;
+
 }
 
 nav a {
+text-decoration: none;
+color: black;
+text-align: left;
+}
 
+nav a:hover{
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
 
 main {
-  flex-wrap: wrap;
-  display: flex
-}
-
-.content {
-  padding: 3px;
-  flex: 5;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.content header {
-  background-color: gray;
-}
-
-.content p {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.int, .web, .exp, .about {
-  border-style: solid;
-  border-radius: 5px;
-  padding: 5px;
-  flex: 0 0 400px;
-  background: burlywood;
-}
-.about img {
-  width: 200px;
-  height: auto;
+  flex-wrap: wrap
 }
 
 aside {
-  width: 100px;
+color: white;
+background-color: black;
+border: 2px;
+padding: 50px;
+
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content :hover {
+  background-color: white;
+}
+
+.content header {
+  font-size:medium;
+  padding: 10px;
+  color: white;
+}
+
+.content p {
+text-align: center;
+}
+
+.int, .web, .about {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: white;
+  width: 500px;
+  height: fit-content;
+  background-color: gray;
+}
+
+.about img {
+  width: 300px;
+  margin-left: 100px;
+}
+
+.int img {
+  width: 300px;
+
+}
+
+.web img{
+width: 200px;
 }
 
 footer {
@@ -70,7 +100,5 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  
-}
   
 }
