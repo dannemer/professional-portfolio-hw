@@ -1,8 +1,8 @@
 body {
   background-color: black;
   line-height: 2;
-  margin: auto;
   background-image: url(/assets/photo-1572756317709-fe9c15ced298.jpeg);
+  padding: 10px;
 }
 
 header {
@@ -48,10 +48,11 @@ main {
 }
 
 .content {
-  display: inline-flex;
+  display: flex;
+  flex: 1 2 auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  flex-shrink: inherit;
+  position: relative;
 }
 
 .content header {
@@ -62,6 +63,7 @@ main {
 
 .content p {
   text-align: center;
+  padding: 5px;
 }
 
 .about,
@@ -98,6 +100,7 @@ main {
   width: 300px;
   margin-left: 250px;
   margin-top: 20px;
+  display: flex;
 }
 
 .int img {
@@ -117,8 +120,11 @@ footer {
   color: white;
   font-size: large;
   background-color: black;
+  position: relative;
 }
 
-@media screen {
-  min-width: 200px;
+@media screen and (max-width: 800px) {
+  main, nav, .web {
+    flex-direction: column;
+  }
 }
