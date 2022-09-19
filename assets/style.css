@@ -1,12 +1,14 @@
 body {
   background-color: black;
   line-height: 2;
-  flex-direction: row;
+  margin: auto;
+  background-image: url(/assets/photo-1572756317709-fe9c15ced298.jpeg);
 }
 
 header {
   background: black;
   text-align: center;
+  width: 100%;
 }
 
 header h1 {
@@ -23,91 +25,99 @@ header h1 {
 
 nav {
   background-color: white;
-  text-align: left;
+  text-align: center;
   font-size: large;
-
+  border-bottom: solid black;
+  height: 38px;
 }
 
 nav a {
 text-decoration: none;
 color: black;
-text-align: left;
+border: 2px solid black;
+background-color: white;
 }
 
 nav a:hover{
   background-color: black;
   color: white;
-  padding: 20px;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap
+  background-image: url(https://unsplash.com/photos/lXIpMj1AFUI);
 }
 
 .content {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  background-color: gray
+  justify-content: space-evenly;
+  flex-shrink: inherit;
 }
 
 .content header {
-  font-size:medium;
+  font-size:large;
   padding: 10px;
-  color: white
+  color: white;
 }
 
 .content p {
 text-align: center;
 }
 
-.int, .web, {
+.about, .web, .int {
   border-style: solid;
   border-radius: 5px;
   border-color: white;
-  width: 300px;
-  height: 600px
+  width: 800px;
+  height: 600px;
   background-color: gray;
 }
 
-.about {
+.cont{
   border-style: solid;
   border-radius: 5px;
   border-color: white;
-  width: 1000px;
-  height: 600px
+  width: 800px;
+  height: 200px;
   background-color: gray;
-  
 }
 
-.cont {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: white;
-  width: 300px;
-  height: 50px
-  background-color: gray;
-  text-align: center;
+.cont ul {
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.cont a{
+  text-decoration: none;
+  color: white;
 }
 
 .about img {
   width: 300px;
-  margin-left: 100px;
+  margin-left: 250px;
+  margin-top: 20px;
 }
 
 .int img {
   width: 400px;
-  margin-left: 50px;
+  margin-left: 200px;
+  margin-top: 20px;
 }
 
 .web img{
 width: 200px;
+margin-left: 130px;
+margin-top: 20px;
 }
 
 footer {
   text-align: center;
+  color: white;
+  font-size: large;
+  background-color: black;
 }
 
-@media screen and (max-width: 900px) {
-  main
+@media screen {
+  min-width: 200px;
+  
 }
