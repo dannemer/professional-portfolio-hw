@@ -11,3 +11,5 @@ With these points in mind, in this Challenge you'll set yourself up for future s
 ## Credits
 
 Google + MDN and W3Schools links
+
+in addition to: https://www.youtube.com/c/programmingwithmosh
